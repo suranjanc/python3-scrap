@@ -1,0 +1,6 @@
+set1=set()
+print(type(set1))
+set1.add(1)
+print(set1)
+set1.update('a','b','c','d','e')
+print(set1)
