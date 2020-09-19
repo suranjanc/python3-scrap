@@ -1,5 +1,3 @@
-import datetime
+#print(ord('c'))
 
-dateEntered='13 Sep 2020'
-
-print(datetime.datetime.strptime(dateEntered,'%d %b %Y').weekday())
+print(hex(ord('h')))
