@@ -1,7 +1,7 @@
 tttList=[
-  ["X", "O", "O"],
-  ["X", "X", "O"],
-  ["O", "O", "E"]
+  ["O", "O", "O"],
+  ["X", "O", "E"],
+  ["O", "E", "O"]
 ]
 
 def tttWinner(tttList):
@@ -54,9 +54,6 @@ def tttWinner(tttList):
             #[(winner='Winner is X') if countO==3 else (winner='Winner is O')]
         else:
             winner='Its a draw'
-            #print('Its a draw')
-    
-    #return winner
     print(winner)
 
 tttWinner(tttList)

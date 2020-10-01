@@ -5,8 +5,6 @@ def getString():
 
 #def for mirroring
 def calcMirror(strToBeConverted):
-    #ordBase=ord('a')
-    #ordZ=ord('z')
     mirrorStr=''.join(chr(ord('z') - (ord(item)-ord('a'))) for item in strToBeConverted)
     return mirrorStr
 
