@@ -4,15 +4,15 @@ sortedNosList=nosList.copy()
 sortedNosList.sort()
 
 #approach - sort a list, once sorted, create a new list for the item and keep adding items to that list
-def sortList(listToBeSorted):
+def sortList(passedList):
     sortedList=[]
     for i in range(len(nosList)):
-        if not any(listToBeSorted[i] in sublist for sublist in sortedList):
-            sortedList.append([listToBeSorted[i]])
+        if not any(passedList[i] in sublist for sublist in sortedList):
+            sortedList.append([passedList[i]])
         else:
-            #indexToInsert= sortedList.index([listToBeSorted[i]])
-            indexToInsert=searchSubList(sortedList,listToBeSorted[i])
-            sortedList[indexToInsert].append(listToBeSorted[i])
+            #indexToInsert= sortedList.index([passedList[i]])
+            indexToInsert=searchSubList(sortedList,passedList[i])
+            sortedList[indexToInsert].append(passedList[i])
     return sortedList
 
 def searchSubList(listToSearch, itemToSearch):
