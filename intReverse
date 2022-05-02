@@ -1,0 +1,17 @@
+
+def reverseInt(intToReverse):
+    # Use a breakpoint in the code line below to debug your script.
+    intAsStr=str(intToReverse)
+    intAsStrLen=len(intAsStr)
+    newStrList=[]
+
+    for i in range(intAsStrLen-1, -1, -1):
+        newStrList.append(intAsStr[i])
+
+    newStr=''.join(newStrList)
+    print(newStr)
+
+# Press the green button in the gutter to run the script.
+reverseInt(123456)
+
+
